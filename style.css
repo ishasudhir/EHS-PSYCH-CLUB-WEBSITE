@@ -7,7 +7,7 @@ body {
 }
 
 header, footer {
-  background: #3b5998;
+  background: #4a0707;
   color: white;
   padding: 1rem;
   text-align: center;
@@ -39,7 +39,7 @@ h2 {
 button {
   width: 150px;
   padding: 0.5rem;
-  background-color: #3b5998;
+  background-color: #4a0707;
   color: white;
   border: none;
   cursor: pointer;
@@ -47,7 +47,7 @@ button {
 }
 
 button:hover {
-  background-color: #2d4373;
+  background-color: #525050;
 }
 
 #posts .post {
