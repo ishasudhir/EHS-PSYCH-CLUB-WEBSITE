@@ -2,60 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eastlake High School Psych Club</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Eastlake High School Psych Club</h1>
-    <p>🔬 The official website and research forum for EHS Psych Club! 👩‍🔬</p>
+    <h1>Eastlake Psych Club</h1>
+    <p class="tagline">🔬 Research. Curiosity. Student Voice.</p>
   </header>
 
   <main class="content-wrapper">
-  <section id="submission-section">
-    <h2>Submit Your Research Idea or Finding</h2>
-    <form id="submission-form">
-      <textarea id="entry" placeholder="Write your post here... (viewable by all visitors of EHS psych club website)" required></textarea>
-      <button type="submit">Submit</button>
-    </form>
-  </section>
+    <section id="submission-section" class="card">
+      <h2>✍️ Submit Your Research Idea</h2>
+      <form id="submission-form">
+        <textarea id="entry" placeholder="Share an idea, observation, or finding..." required></textarea>
+        <button type="submit">Post</button>
+      </form>
+    </section>
 
-  <section id="posts-section">
-    <h2>Student Submissions</h2>
-    <div id="posts"></div>
-  </section>
-  <section id="powerpoints-section">
-  <h2>Meeting PowerPoints</h2>
-  <p>Learn about our interesting PowerPoints</p>
-  <div id="powerpoint-gallery">
-    <!-- Example embedded preview cards -->
-     <div class="ppt-card">
-  <iframe src="YOUR_EMBED_URL" frameborder="0" allowfullscreen></iframe>
-  <p>Title: Your Title Here</p>
-</div>
+    <section id="posts-section" class="card">
+      <h2>🧠 Student Submissions</h2>
+      <div id="posts"></div>
+    </section>
 
-    <div class="ppt-card">
-      <iframe src="https://docs.google.com/presentation/d/1CayrpTzV_yZMzkn06hvN66k4-kvpH9gLNM3HIL-MnTw/edit?usp=sharing" frameborder="0" allowfullscreen></iframe>
-      <p>Title: Isha S past presentation (example)</p>
-    </div>
-    <div class="ppt-card">
-      <iframe src="https://docs.google.com/presentation/d/1CayrpTzV_yZMzkn06hvN66k4-kvpH9gLNM3HIL-MnTw/edit?usp=sharing" frameborder="0" allowfullscreen></iframe>
-      <p>Title: Neuroscience and Behavior</p>
-    </div>
-    <!-- Add more here -->
-  </div>
-</section>
+    <section id="powerpoints-section" class="card full">
+      <h2>📊 Past Presentations</h2>
+      <div id="powerpoint-gallery">
+        <div class="ppt-card">
+          <iframe src="https://docs.google.com/presentation/d/1CayrpTzV_yZMzkn06hvN66k4-kvpH9gLNM3HIL-MnTw/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen></iframe>
+          <p>Neuroscience & Behavior</p>
+        </div>
+        <div class="ppt-card">
+          <iframe src="YOUR_EMBED_URL" frameborder="0" allowfullscreen></iframe>
+          <p>Example Title</p>
+        </div>
+      </div>
+    </section>
 
-  <aside id="calendar-container">
-    <h2>Psych Club Meetings & Events</h2>
-    <div id="calendar"></div>
-    <div id="event-details"></div>
-  </aside>
-</main>
+    <aside id="calendar-container" class="card">
+      <h2>📅 Upcoming Events</h2>
+      <div id="calendar"></div>
+      <div id="event-details"></div>
+    </aside>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Eastlake High School Psych Club</p>
+    <p>&copy; 2025 Eastlake Psych Club — Designed with ❤️</p>
   </footer>
 
   <script src="script.js"></script>
